@@ -1,0 +1,16 @@
+*. This is in Tensorflow 1.x.
+1. Collecting Images From Online Sources.
+2. Creating label images using labelImg tool(Pascal VOC).
+3. Create CSV's from XML files of train and test folders.
+4. Now generate tfRecords from CSV's created in previous step.
+5. Settings: Change label whatever you choose in generate_trecord.py
+6. Models and Thier Configrations "https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs"
+7. Change num_classes in config
+8. Chnage fine_tune_checkpoint in config
+9. Change train_input_reader in config
+10. Change eval_input_reader in config
+11. Generate .pbtxt file
+12. Important part make training folder in data folder where you make .pbtxt file
+13. Ad config to the training folder
+14. Important Step Please Change batch_size to 5 if you get memory or ram error
+15. Change num_steps to 10000 or you go forever for training
